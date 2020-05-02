@@ -5,12 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EventosComponent } from './eventos/eventos.component';
 import { NavComponent } from './nav/nav.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DateTimeFormatPipePipe } from './_helps/DateTimeFormatPipe.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 
 @NgModule({
@@ -28,7 +29,10 @@ import { ModalModule } from 'ngx-bootstrap/modal';
       BrowserAnimationsModule,
       TooltipModule.forRoot(),
       BsDropdownModule.forRoot(),
-      ModalModule.forRoot()
+      ModalModule.forRoot(),
+      ReactiveFormsModule,
+      BsDatepickerModule.forRoot(),
+   
    ],
    providers: [],
    bootstrap: [
