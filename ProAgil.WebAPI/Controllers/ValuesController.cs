@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using ProAgil.Repository;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ProAgil.WebAPI.Controllers
 {
@@ -21,6 +22,7 @@ namespace ProAgil.WebAPI.Controllers
 
         // GET api/values
         [HttpGet]
+        [AllowAnonymous]
         public async Task< IActionResult> Get()
         {
             try

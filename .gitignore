@@ -1,0 +1,7 @@
+ProAgil-App/node_modules/
+ProAgil.Domain/bin/
+ProAgil.Domain/obj/
+ProAgil.Repository/bin/
+ProAgil.Repository/obj/
+ProAgil.WebAPI/bin/
+ProAgil.WebAPI/obj/
