@@ -139,7 +139,7 @@ namespace ProAgil.WebAPI.Controllers
         }
 
          [HttpPost("upload")]
-        public async Task<IActionResult> upload()
+        public IActionResult upload()
         {
             try
             {
